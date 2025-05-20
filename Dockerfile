@@ -1,9 +1,9 @@
 FROM python:3.11-slim
 
-# Install system dependencies including Nmap
+# Install system dependencies including Nmap and Git
 RUN apt-get update && apt-get install -y \
     git \
-    nmap && \  # <-- Added Nmap installation
+    nmap && \
     git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git /opt/sqlmap && \
     ln -s /opt/sqlmap/sqlmap.py /usr/local/bin/sqlmap
 
