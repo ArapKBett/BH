@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scan Report</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/icon.png') }}">
+    <script src="{{ url_for('static', filename='js/background.js') }}"></script>
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+    <div class="container">
+        <h1>Scan Report</h1>
+        <h2>Subdomains</h2>
+        <ul>
+            {% for subdomain in subdomains %}
+                <li>{{ subdomain }}</li>
+            {% endfor %}
+        </ul>
+        <h2>Open Ports</h2>
+        <ul>
+            {% for port, state in ports.items() %}
+                <li>Port {{ port }}: {{ state }}</li>
+            {% endfor %}
+        </ul>
+        <h2>Vulnerabilities</h2>
+        {{ report | safe }}
+    </div>
+</body>
+</html>
