@@ -1,0 +1,11 @@
+flask==3.0.3
+requests==2.32.3
+dnspython==2.6.1
+beautifulsoup4==4.12.3
+nmap==0.7.1
+python-dotenv==1.0.1
+pytest==8.3.2
+gunicorn==22.0.0
+lxml==5.3.0          # For advanced HTML parsing
+urllib3==2.2.3       # For secure HTTP requests
+sqlmap==1.8.9        # For automated SQL injection testing
