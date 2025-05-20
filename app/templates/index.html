@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arap's BountyHunter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/icon.png') }}">
+    <script src="{{ url_for('static', filename='js/background.js') }}"></script>
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+    <div class="container">
+        <h1>BountyHunter</h1>
+        <form method="POST">
+            <label for="target">Target Domain:</label>
+            <input type="text" id="target" name="target" placeholder="example.com">
+            <button type="submit">Scan</button>
+        </form>
+    </div>
+</body>
+  </html>
