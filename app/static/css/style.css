@@ -1,0 +1,57 @@
+body {
+    font-family: 'Courier New', monospace;
+    color: #0f0;
+    background: #000;
+    margin: 0;
+    overflow: hidden;
+}
+canvas#matrix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.container {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+    text-shadow: 0 0 10px #0f0;
+}
+input, button {
+    font-family: 'Courier New', monospace;
+    background: #111;
+    color: #0f0;
+    border: 1px solid #0f0;
+    padding: 10px;
+    margin: 5px;
+}
+button:hover {
+    background: #0f0;
+    color: #000;
+    cursor: pointer;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+th, td {
+    border: 1px solid #0f0;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background: #222;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    padding: 5px 0;
+  }
