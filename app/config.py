@@ -11,7 +11,7 @@ class Config:
         "port_scan": "nmap"
     }
     SCAN_TIMEOUT = 3600  # Seconds
-    ALLOWED_DOMAINS = https://www.kayak.com  # Populated by HackerOne program scope
+    ALLOWED_DOMAINS = ["https://www.kayak.com"]  # Populated by HackerOne program scope
     VULN_CHECKS = [
         "xss", "sqli", "lfi", "rfi", "idor", "csrf", "ssrf",
         "open_redirect", "misconfig", "insecure_deserialization"
